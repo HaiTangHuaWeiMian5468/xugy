@@ -1,0 +1,60 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.central-icon {
+    position: relative;
+    z-index: 1;
+}
+.central-icon img {
+    width: 400px; 
+    height: 400px;
+}
+
+/* 知识点列表样式 */
+.knowledge-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+/* 单个知识点框样式 */
+.knowledge-item {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 300px;
+}
+.knowledge-item h3 {
+    margin-top: 0;
+    color: white;
+}
+.knowledge-item ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+/* 知识点框定位 */
+.knowledge-item:nth-child(1) {
+    top: 75px; 
+    left: -40px; 
+}
+.knowledge-item:nth-child(2) {
+    bottom: 75px; 
+    left: -40px; 
+	height: 250px;
+}
+.knowledge-item:nth-child(3) {
+    bottom: 75px; 
+    right: 250px; 
+}
+    
